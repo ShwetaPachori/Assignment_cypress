@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2021-02-11T10:22:14" tests="0" file="cypress\integration\CreateToDo.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Create ToDo List" timestamp="2021-02-11T10:22:14" tests="2" time="0.0000" failures="2">
+    <testcase name="Create ToDo List Test create list functionality (example #1)" time="0.0000" classname="Test create list functionality (example #1)">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.completed &gt; .view &gt; label`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.completed > .view > label`, but never found it.
+    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\support\index.js:21:18)]]></failure>
+    </testcase>
+    <testcase name="Create ToDo List Test mark work item complete functionality (example #1)" time="0.0000" classname="Test mark work item complete functionality (example #1)">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;undefined item left&apos; within the element: &lt;footer.footer&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'undefined item left' within the element: <footer.footer> but never did.
+    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\support\index.js:32:23)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2021-02-11T10:10:02" tests="0" file="cypress\integration\CreateToDo.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Create ToDo List" timestamp="2021-02-11T10:10:02" tests="2" time="0.0000" failures="2">
+    <testcase name="Create ToDo List Test create list functionality (example #1)" time="0.0000" classname="Test create list functionality (example #1)">
+      <failure message="cy.get(...).length is not a function" type="TypeError"><![CDATA[TypeError: cy.get(...).length is not a function
+    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\support\index.js:21:50)]]></failure>
+    </testcase>
+    <testcase name="Create ToDo List Test mark work item complete functionality (example #1)" time="0.0000" classname="Test mark work item complete functionality (example #1)">
+      <failure message="cy.get(...).length is not a function" type="TypeError"><![CDATA[TypeError: cy.get(...).length is not a function
+    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress\support\index.js:21:50)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
