@@ -23,6 +23,7 @@ Then('User add new work item as {string}', (newItem) => {
 Then('New item should be added in the list as {string}', (newItem) => {
 
 	cy.ValidateItemAdded(newItem);
+   cy.listLen();
 
 })
 
