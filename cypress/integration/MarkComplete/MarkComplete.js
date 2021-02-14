@@ -5,9 +5,10 @@ import {
 } from "cypress-cucumber-preprocessor/steps";
 /// <reference types="cypress" />
 
-beforeEach(() => {
+before(() => {
 	cy.setCounter();
 	cy.visit(Cypress.env("url"))
+
 })
 
 Given('User is on todomvc page', () => {
@@ -16,12 +17,13 @@ Given('User is on todomvc page', () => {
 
 Then('User add new work item as {string}', (newItem) => {
 	cy.addItem(newItem)
-	// cy.addItem(newItem+Math.random().toFixed(2)*100)
+     cy.addItem("test"+newItem+Math.random().toFixed(2)*100)
+     cy.addItem("design"+Math.random().toFixed(2)*100)
 })
 
 Then('New item should be added in the list as {string}', (newItem) => {
-	cy.listLen();
-	cy.validateItemAdded(newItem);    
+	cy.validateItemAdded(newItem);
+   cy.listLen();
 })
 
 And('list footer should be updated', () => {
@@ -29,12 +31,6 @@ And('list footer should be updated', () => {
 	cy.validateFooter()
 })
 
-And('Text filed should be cleared', () => {
-	cy.get('.new-todo').should('have.text', '')
+Then('User marks the item {string}  as complete', (newItem) => {
+	cy.markComplete(newItem)
 })
-
-Then('User add new work item with as {string} leading and trailing spaces', (newItem) => {
-
-	cy.get('.new-todo').type(`       ${newItem}          `).type('{enter}')
-})
-

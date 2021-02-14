@@ -13,14 +13,16 @@ Feature: Create ToDo List
             | NewItem |
             | Design  |
 
-    Scenario Outline: Test mark work item complete functionality
+
+
+
+
+    Scenario Outline: To Verify Input text is trim
         Given User is on todomvc page
-        Then User add new work item as "<NewItem>"
+        Then User add new work item with as "<NewItem>" leading and trailing spaces  
         Then New item should be added in the list as "<NewItem>"
-        Then User marks the item "<NewItem>"  as complete 
-        And list footer should be updated
+        
 
         Examples:
             | NewItem |
-            | Test  |
-
+            | Testing  |
