@@ -20,7 +20,8 @@ steps:
   displayName: 'Install Node Dependencies'
 
 - script: |
-    npm run cy:run
+- script: |
+    npm test
   displayName: 'Run Cypress Tests'
 
 - task: PublishTestResults@2
