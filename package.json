@@ -7,6 +7,10 @@
         "json-server": "^0.16.1"
     
     },
+     "scripts": {
+    "open": "npx cypress open",
+    "test": "npx cypress run"
+  },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true
     }
