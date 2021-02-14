@@ -5,7 +5,7 @@
 
 ## Configuration
 * Configuration can be found at `cypress.json`
-
+## Test Scripts
 The cypress-cucumber-preprocessor adds support for using feature files when testing with Cypress.
 All features files are present in `cypress/integration/` contains test scenario description using gherkin and step defination files are also placed in `cypress/integration/`
 
