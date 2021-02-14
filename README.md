@@ -6,7 +6,7 @@
 * To install cucumber plugin `npm install --save-dev cypress-cucumber-preprocessor`
 
 The cypress-cucumber-preprocessor adds support for using feature files when testing with Cypress.
-All features files are present in `cypress/integration/` contains test scenario description using gherkin and step defination files are also placed in `cypress/integration/`
+*All features files are present in `cypress/integration/` contains test scenario description using gherkin and step defination files are also placed in `cypress/integration/`
 
 Test script are writtrn using custom commands in  cypress/support/commands.js
 These new defined commands can be reused in  spec files as explained below:
