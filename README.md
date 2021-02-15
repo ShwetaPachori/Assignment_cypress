@@ -28,6 +28,7 @@ Then('to verify list length', (newItem) => {
 * To install junit `npm install --save-dev cypress-multi-reporters mocha-junit-reporter`
 * Screenshots are placed in `cypress\screenshots` folder
 * Videos are placed in `cypress\videos` folder
+* Junit reports can also be checked in 'Test' tab in Azure Pipeline
 ## Execution
 * To run test scripts in headless mode: `npx cypress run`
 * To run test scripts in browser: `npx cypress open
