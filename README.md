@@ -30,6 +30,10 @@ Then('to verify list length', (newItem) => {
 * Videos are placed in `cypress\videos` folder
 ## Execution
 * To run test scripts in headless mode: `npx cypress run`
-* To run test scripts in browser: `npx cypress open`
+* To run test scripts in browser: `npx cypress open
+
+`https://dev.azure.com/401323/CypressAssignment/_apis/build/status/CypressAssignment-CI?branchName=main
+
+
 
 To view more detail on cypress [click here](cypress.io)
