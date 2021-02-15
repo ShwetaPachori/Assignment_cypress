@@ -1,0 +1,33 @@
+# This workflow will do a clean install of node dependencies, execute the Cypress Tests and upload the reports
+
+name: TestExecution
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+    - name: Install dependencies
+      run: npm install        
+    - name: Run Cypress Test
+      run: npm run cy:run
+    - name: Upload Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: TestResults
+        path: |
+          cypress/videos/
+          cypress/reports/junit
+          cypress/screenshots/
