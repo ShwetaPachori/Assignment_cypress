@@ -31,8 +31,8 @@ Then('to verify list length', (newItem) => {
 * Junit reports can also be checked in 'Test' tab in Azure Pipeline
 ## Execution
 * To run test scripts in headless mode: `npx cypress run`
-* To run test scripts in browser: `npx cypress open
-* To run from azure pipeline use 'cyprress/azure-pipeline.yml' pipeline status is added here
+* To run test scripts in browser: `npx cypress open`
+* To run from azure pipeline use `cyprress/azure-pipeline.yml` pipeline status is added here
 [![Build Status](https://dev.azure.com/401323/CypressAssignment/_apis/build/status/CypressAssignment-CI?branchName=main)](https://dev.azure.com/401323/CypressAssignment/_build/latest?definitionId=2&branchName=main)
 * To run using GitHub Action use file Assignment_cypress/.github/workflows status added here ![TestExecution](https://github.com/ShwetaPachori/Assignment_cypress/workflows/TestExecution/badge.svg)
 
