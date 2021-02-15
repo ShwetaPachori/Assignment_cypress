@@ -31,10 +31,8 @@ Then('to verify list length', (newItem) => {
 ## Execution
 * To run test scripts in headless mode: `npx cypress run`
 * To run test scripts in browser: `npx cypress open
-
-
+* To run from azure pipeline use 'cyprress/azure-pipeline.yml' pipeline status is added below
 [![Build Status](https://dev.azure.com/401323/CypressAssignment/_apis/build/status/CypressAssignment-CI?branchName=main)](https://dev.azure.com/401323/CypressAssignment/_build/latest?definitionId=2&branchName=main)
-https://dev.azure.com/401323/CypressAssignment/_apis/build/status/CypressAssignment-CI?branchName=main
 
 
 
