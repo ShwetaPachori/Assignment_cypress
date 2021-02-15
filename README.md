@@ -32,7 +32,9 @@ Then('to verify list length', (newItem) => {
 * To run test scripts in headless mode: `npx cypress run`
 * To run test scripts in browser: `npx cypress open
 
-`https://dev.azure.com/401323/CypressAssignment/_apis/build/status/CypressAssignment-CI?branchName=main
+
+
+https://dev.azure.com/401323/CypressAssignment/_apis/build/status/CypressAssignment-CI?branchName=main
 
 
 
