@@ -24,7 +24,7 @@ Then('to verify list length', (newItem) => {
 	cy.listLen();	    
     })
 ```
-## Report
+## Test Reports
 * To install junit `npm install --save-dev cypress-multi-reporters mocha-junit-reporter`
 * Screenshots are placed in `cypress\screenshots` folder
 * Videos are placed in `cypress\videos` folder
