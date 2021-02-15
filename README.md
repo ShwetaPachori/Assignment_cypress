@@ -11,7 +11,14 @@ All features files are present in `cypress/integration/` contains test scenario 
 
 Test script are writtrn using custom commands in  cypress/support/commands.js
 These new defined commands can be reused in  spec files as explained below:
+```Gherkin
+Feature: Guess the word
 
+  # The first example has two steps
+  Scenario: Maker starts a game
+    When the Maker starts a game
+    Then the Maker waits for a Breaker to join
+```
 ```javascript
 Cypress.Commands.add("listLen",() =>{
     originalLen = cy.get('.view > label').length;
